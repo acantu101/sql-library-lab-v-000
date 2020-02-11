@@ -9,8 +9,9 @@ LIMIT 3;
 end
 
 def select_name_and_motto_of_char_with_longest_motto
-  "SELECT characters.name, MAX(characters.motto)
-  FROM characters;
+  "SELECT characters.name, MAX(LENGHT(characters.motto))
+  FROM characters
+  GROUP BY characters.name
   "
 end
 
