@@ -30,7 +30,7 @@ def select_name_and_series_subgenres_of_authors
                           FROM subgenres
                           JOIN authors
                           ON subgenres.id = authors.id
-                      
+
                           )
   FROM authors
   JOIN series
