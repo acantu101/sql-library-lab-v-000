@@ -48,6 +48,6 @@ def select_character_names_and_number_of_books_they_are_in
   "SELECT name, COUNT(DISTINCT(character_id))
   FROM character_books
   GROUP BY book_id;
-  
+
   "
 end
