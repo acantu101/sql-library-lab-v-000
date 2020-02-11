@@ -13,6 +13,7 @@ def select_name_and_motto_of_char_with_longest_motto
   FROM characters
   GROUP BY characters.id
   HAVING max(length(characters.motto))
+  ORDER BY DESC
   LIMIT 1;
   "
 end
