@@ -25,8 +25,10 @@ def select_value_and_count_of_most_prolific_species
 end
 
 def select_name_and_series_subgenres_of_authors
-  "SELECT
-  FROM
+  "SELECT authors.name, series.subgenres
+  FROM authors
+  JOIN series
+  GROUP BY authors.name;
   "
 end
 
