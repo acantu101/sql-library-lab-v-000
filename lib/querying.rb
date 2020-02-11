@@ -4,6 +4,7 @@ FROM books
 JOIN series
 ON books.series_id = series.id
 ORDER BY books.year;
+LIMIT 3;
 "
 end
 
